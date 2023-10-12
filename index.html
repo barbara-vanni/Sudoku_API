@@ -12,15 +12,14 @@
 <body>
     <!-- Title sudoku -->
     <h1>Sudoku</h1>
+    <!-- little separating line -->
     <hr>
 
-    <!-- Board -->
+    <!-- Board game  -->
     <div class="container">
-        <!-- Timer  -->
-        <div class="circle-background"></div>
-
+        
         <div class="sudoku-grid">
-
+            
             <table id="sudoku">
                 <tbody>
                     <tr>
@@ -90,7 +89,7 @@
                         <td><input type="text" maxlength="1" /></td>
                     </tr>
                     <tr>
-
+                        
                         <td><input type="text" maxlength="1" /></td>
                         <td><input type="text" maxlength="1" /></td>
                         <td><input type="text" maxlength="1" /></td>
@@ -102,7 +101,7 @@
                         <td><input type="text" maxlength="1" /></td>
                     </tr>
                     <tr>
-
+                        
                         <td><input type="text" maxlength="1" /></td>
                         <td><input type="text" maxlength="1" /></td>
                         <td><input type="text" maxlength="1" /></td>
@@ -127,10 +126,15 @@
                 </tbody>
             </table>
         </div>
-
-
+        
+        <!-- Timer  -->
+        <div class="circle-background">
+            <div class="timer-container">
+                <div class="timer-text" id="timer">00:00</div>
+                <!-- <span id="timer">00:00</span> -->
+            </div>
+        </div>
+        <!-- Button new game -->
         <button id="nouvellePartie">Nouvelle Partie</button>
 
-
-        <script src="script.js"></script>
-</body>
+    </body>
