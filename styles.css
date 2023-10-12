@@ -100,6 +100,13 @@ td:nth-child(3n + 1) {
     font-size: 70px;
 }
 
+#stop_pause {
+    text-align: center;
+    margin-top: 150px;
+    /* margin-right: 40px; */
+}
+
+
 #nouvellePartie {
     margin: 0 auto;
     display: flex;

@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
+    <script src="timer.js"></script>
 </head>
 
 <body>
@@ -19,7 +20,7 @@
     <div class="container">
         
         <div class="sudoku-grid">
-            
+            <!-- use of 'table' -->
             <table id="sudoku">
                 <tbody>
                     <tr>
@@ -127,14 +128,17 @@
             </table>
         </div>
         
-        <!-- Timer  -->
+        <!-- Timer in a red circle -->
         <div class="circle-background">
             <div class="timer-container">
                 <div class="timer-text" id="timer">00:00</div>
-                <!-- <span id="timer">00:00</span> -->
+                <button id="stop_pause">Stop</button>
             </div>
         </div>
+
         <!-- Button new game -->
         <button id="nouvellePartie">Nouvelle Partie</button>
+        <!-- Button Stop -->
+
 
     </body>
