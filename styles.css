@@ -1,0 +1,94 @@
+body {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+hr {
+    width: 400px;
+    height: 2px;
+    color:black;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    position: relative;
+    height: 100vh;
+    padding: 20px;
+
+}
+
+.sudoku-grid{
+
+    margin : 0 auto;
+    flex-wrap: wrap;
+    
+}
+
+
+table {
+    border: 2px solid #746f6f1f;
+    border-spacing: 0;
+    border-collapse: collapse;
+    background-color: yellow;
+}
+
+td {
+    border: 1px solid #321266;
+    text-align: center;
+    vertical-align: middle;
+}
+
+td input {
+    color: #a40d4f;
+    padding: 0;
+    border: 0;
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+    background-color: #55d568;
+    outline: none;
+}
+
+
+tr:nth-child(3n) {
+    border-bottom: 4px solid #3b0acd;
+}
+
+tr:nth-child(3n + 1) {
+    border-top: 4px solid #000000;
+}
+
+td:nth-child(3n) {
+    border-right: 4px solid #000000;
+}
+
+td:nth-child(3n + 1) {
+    border-left: 4px solid #000000;
+}
+
+.circle-background {
+
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: #98061c;
+    /* Couleur de fond */
+    border-radius: 50%;
+    /* Cercle parfait */
+    z-index: -1;
+}
+
+title {
+    shape-outside: circle(50%);
+    /* Forme du cercle */
+    margin: 10px;
+    /* Marge pour l'espacement */
+    z-index: 1;
+}
