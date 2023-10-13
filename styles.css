@@ -36,6 +36,8 @@ table {
     border-spacing: 0;
     border-collapse: collapse;
     background-color: rgb(255, 255, 255);
+    width: 550px;
+    height: 550px;
 }
 
 td {
@@ -79,9 +81,9 @@ td:nth-child(3n + 1) {
 
 .circle-background {
     position: absolute;
-    left :280px;
-    width: 450px;
-    height: 450px;
+    left :230px;
+    width: 550px;
+    height: 550px;
     margin-top: 125px;
     margin-left: auto;
     background-color: #98061c;
@@ -92,7 +94,7 @@ td:nth-child(3n + 1) {
 .circle-background > .timer-container {
     text-align: center;
     margin-top: 170px;
-    margin-right: 50px;
+    margin-right: 100px;
 }
 
 
