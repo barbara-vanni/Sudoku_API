@@ -36,6 +36,8 @@ function fillGrid() {
                 boutonPause.addEventListener("click", toggleTimer2);
             }
             
+            const boutonPause = document.getElementById("check");
+            boutonPause.addEventListener("click", verifyGrid);
             
             console.log(data);
             return data;
