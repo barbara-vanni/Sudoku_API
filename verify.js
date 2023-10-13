@@ -15,7 +15,6 @@ function verifyGrid() {
         filledGrid.push(row);
     }
 
-    console.log(JSON.stringify(filledGrid))
     fetch('http://31.33.247.37:3000/api/check', {
         method: 'POST',
         headers: {
@@ -23,9 +22,8 @@ function verifyGrid() {
         },
         body: JSON.stringify(filledGrid)
     })
-    .then(response => response.json())
-    .then(data => {
-        console.log(response.json())
+    .then(response => {response.json().then(data => {
+        console.log(data);})
     })
     .catch(error => {
         console.error('Erreur lors de la vérification de la grille :', error);
