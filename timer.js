@@ -27,7 +27,7 @@ function resetTimer() {
     updateTimerDisplay();
 }
 
-// j'avoue je sais pas trop pour celle là 
+
 function updateTimerDisplay() {
     const timerElement = document.getElementById("timer");
     const formattedTime = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
